@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:paddingTop="150dp"
+    tools:context="com.example.mohamed.myfirebase.MainActivity">
+
+    <Button
+        android:id="@+id/homeLoginBtn"
+        android:layout_marginBottom="20dp"
+        android:background="#5cb35c"
+        android:layout_gravity="center_horizontal"
+        android:text="Login!"
+        android:layout_weight="2"
+        android:layout_width="200dp"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/homeSigninBtn"
+        android:layout_marginBottom="20dp"
+        android:background="#5c62b3"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:text="SignUp!"
+        android:layout_weight="2"
+        android:layout_width="200dp"
+        android:layout_height="0dp" />
+
+
+</LinearLayout>

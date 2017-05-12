@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    android:background="#ffd9b3"
+    tools:context="com.example.mohamed.myfirebase.RegisterActivity">
+
+
+    <TextView
+        android:layout_weight="2"
+        android:text="Register."
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="0dp" />
+
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:text="Register"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="0dp" />
+
+</LinearLayout>
