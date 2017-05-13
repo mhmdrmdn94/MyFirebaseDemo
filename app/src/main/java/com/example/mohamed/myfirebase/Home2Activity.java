@@ -1,5 +1,7 @@
 package com.example.mohamed.myfirebase;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -57,8 +59,14 @@ public class Home2Activity extends AppCompatActivity {
                 String userID = mAuth.getCurrentUser().getUid();
                 Log.i("MyTag", "UserID = " + userID);
 
+                Contact contact = new Contact(cname, cphone);
+
                 DatabaseReference myRef = database.getReference("users/" + userID + "/contacts");
-                myRef.child(cname).setValue(cphone);
+                myRef.child(cphone).setValue(contact);
+
+
+                fullname.setText("");
+                phone.setText("");
 
                 Log.i("MyTag", "Added Successfully");
                 Toast.makeText(Home2Activity.this, "Added", Toast.LENGTH_SHORT).show();
@@ -74,10 +82,15 @@ public class Home2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Home2Activity.this, "Fetching data .. ", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(Home2Activity.this, ContactsActivity.class);
+                startActivity(intent);
+
             }
         });
 
 
     }
+
 
 }

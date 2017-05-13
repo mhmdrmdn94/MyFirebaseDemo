@@ -8,7 +8,7 @@ public class Contact {
     String fullName, phone;
 
     public Contact(){
-
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
     public Contact(String fullName, String phone) {
